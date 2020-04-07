@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "WebArt",
+    "description": "Extensão para o WapSchool",
+    "author": "Renan Tescaro",
+    "browser_action": {
+   	 "default_title": "WebArt Extensão",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icone.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "declarativeContent"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
