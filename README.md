@@ -1,6 +1,6 @@
-# Extensao Google Chrome
+# Extensão Google Chrome
 
-Extensao Google Chrome - HTML, JS e CSS
+Extensão Google Chrome - HTML, JS e CSS
 
 Exemplo para WapSchools
 
