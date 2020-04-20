@@ -1,18 +1,31 @@
 
 // Adiciona eventos
-// this.document.getElementById('btnSalvar').addEventListener("click", salvar)
+document.getElementById('btnPessoa').addEventListener("click", abrirPessoa)
+document.getElementById('btnProduto').addEventListener("click", abrirProduto)
 
-var divPrincipal = document.getElementById('divPrincipal')
+function abrirPessoa(){
 
-// Cria elementos
-var div = document.createElement('div')
-var h3  = document.createElement('h3')
-var h5  = document.createElement('h5')
+    // mudar cor btn selecionado
+    document.getElementById('btnPessoa').style.backgroundColor  = 'coral'
+    document.getElementById('btnProduto').style.backgroundColor = ''
 
-h3.textContent = 'aqui h3'
-h5.textContent = 'aqui h5 teste'
+    // mostrar/ocultar conteudo selecionado
+    document.getElementById('dvProduto').style.display = 'none'
+    document.getElementById('dvPessoa').style.display  = ''
 
-// ADICIONA ELEMENTOS NA divPrincipal
-div.appendChild(h3)
-div.appendChild(h5)
-divPrincipal.appendChild(div)
+    document.getElementById('txtNome')
+    document.getElementById('txtCpf')
+    document.getElementById('txtRg')
+    document.getElementById('txtDataNascimento')
+}
+
+function abrirProduto(){
+
+    // mudar cor btn selecionado
+    document.getElementById('btnProduto').style.backgroundColor = 'coral'
+    document.getElementById('btnPessoa').style.backgroundColor  = ''
+
+    // mostrar/ocultar conteudo selecionado
+    document.getElementById('dvPessoa').style.display  = 'none'
+    document.getElementById('dvProduto').style.display = ''
+}
