@@ -15,5 +15,4 @@ Exemplo para WapSchools
 - [manifest.json](manifest.json) fica as informações como nome da extensão etc
 - [icone.png](icone.png) é o ícone principal da extensão
 
-**Print**
 ![image](https://user-images.githubusercontent.com/22078551/80226799-36d30d80-8623-11ea-8ced-b5458df8b5ab.png)
