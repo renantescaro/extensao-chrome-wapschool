@@ -10,7 +10,7 @@ Exemplo para WapSchools
 - Botão "Carregar sem Compactação"
 
 **Funcionamento**
-- index.html é a página inicial
-- backgroung.js fica os scripts JS
-- manifest.json fica as informações como nome da extensão etc
-- icone.png é o ícone principal da extensão
+- [index.html](index.html) é a página inicial
+- [backgroung.js](backgroung.js) fica os scripts JS
+- [manifest.json](manifest.json) fica as informações como nome da extensão etc
+- [icone.png](icone.png) é o ícone principal da extensão
