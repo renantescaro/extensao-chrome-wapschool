@@ -11,6 +11,12 @@
     <div id="divPrincipal" class="div-principal">
         <h4>Gerador WebArt</h4>
 
+        <br>
+        <div class="form-group">
+            <label>Gerar com máscara?</label>
+            <input id="chkMascara" type="checkbox">
+        </div>
+
         <button id="btnPessoa" class="btn btn-radius">Pessoa</button>
         <button id="btnProduto" class="btn btn-radius">Produto</button>
 
@@ -33,6 +39,7 @@
                     <label>Data Nascimento</label>
                     <input id="txtDataNascimento" class="form-control">
                 </div>
+                <button id="btnGerarPessoa" style='background-color: coral;' class="btn btn-radius">Gerar</button>
             </div>
         </div>
 
@@ -51,13 +58,12 @@
                     <label>SKU</label>
                     <input id="txtSku" class="form-control">
                 </div>
+                <button id="btnGerarProduto" style='background-color: coral;' class="btn btn-radius">Gerar</button>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="libs/popper.js"></script>
+    <script src="libs/bootstrap.js"></script>
     <script src="background.js"></script>
 </body>
 </html>
