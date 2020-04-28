@@ -16,6 +16,12 @@
     ],
 
     "background": {
-        "scripts": ["background.js"]
+        "scripts": [
+            "controller/empresa.js",
+            "controller/git.js",
+            "controller/pessoa.js",
+            "controller/produto.js",
+            "background.js"
+        ]
     }
 }

@@ -11,18 +11,17 @@
     <div id="divPrincipal" class="div-principal">
         <h4>Gerador WebArt</h4>
 
-        <br>
         <div class="form-group">
             <label>Gerar com máscara?</label>
             <input id="chkMascara" type="checkbox">
         </div>
 
         <button id="btnPessoa" class="btn btn-radius">Pessoa</button>
+        <button id="btnEmpresa" class="btn btn-radius">Empresa</button>
         <button id="btnProduto" class="btn btn-radius">Produto</button>
         <button id="btnGit" class="btn btn-radius">Git</button>
 
         <div id="dvPessoa" style="display: none" class="div-conteudo">
-            <br>
             <div style="margin-left: 10px; margin-right: 10px;">
                 <div class="form-group">
                     <label>Nome</label>
@@ -44,8 +43,33 @@
             </div>
         </div>
 
+        <div id="dvEmpresa" style="display: none" class="div-conteudo">
+            <div style="margin-left: 10px; margin-right: 10px;">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input id="txtNomeEmpresa" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>CNPJ</label>
+                    <input id="txtCnpj" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Endereço</label>
+                    <input id="txtEndereco" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>CEP</label>
+                    <input id="txtCep" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input id="txtTelefone" class="form-control">
+                </div>
+                <button id="btnGerarEmpresa" style='background-color: coral;' class="btn btn-radius">Gerar</button>
+            </div>
+        </div>
+
         <div id="dvProduto" style="display: none" class="div-conteudo">
-            <br>
             <div style="margin-left: 10px; margin-right: 10px;">
                 <div class="form-group">
                     <label>Descrição</label>
@@ -100,6 +124,10 @@
     </div>
     <script src="libs/popper.js"></script>
     <script src="libs/bootstrap.js"></script>
+    <script src="controller/empresa.js"></script>
+    <script src="controller/git.js"></script>
+    <script src="controller/pessoa.js"></script>
+    <script src="controller/produto.js"></script>
     <script src="background.js"></script>
 </body>
 </html>
