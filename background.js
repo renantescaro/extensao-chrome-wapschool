@@ -1,9 +1,11 @@
 
-var url = 'http://localhost/webart/pessoal/extensao-api/api-extensao/'
+//'http://localhost/webart/pessoal/extensao-api/api-extensao/'
+var url = 'https://nuvem-azul.com/api-extensao' 
 
 // Adiciona eventos para as abas superiores
 document.getElementById('btnPessoa').addEventListener('click', abrirPessoa)
 document.getElementById('btnProduto').addEventListener('click', abrirProduto)
+document.getElementById('btnGit').addEventListener('click', abrirGit)
 
 // Adiciono o evento pra gerar novos dados
 document.getElementById('btnGerarPessoa').addEventListener('click', getPessoa)
@@ -13,10 +15,12 @@ function abrirPessoa(){
 
     // mudar cor btn selecionado
     document.getElementById('btnPessoa').style.backgroundColor  = 'coral'
+    document.getElementById('btnGit').style.backgroundColor = ''
     document.getElementById('btnProduto').style.backgroundColor = ''
 
     // mostrar/ocultar conteudo selecionado
     document.getElementById('dvProduto').style.display = 'none'
+    document.getElementById('dvGit').style.display  = 'none'
     document.getElementById('dvPessoa').style.display  = ''
 
     getPessoa()
@@ -26,13 +30,27 @@ function abrirProduto(){
 
     // mudar cor btn selecionado
     document.getElementById('btnProduto').style.backgroundColor = 'coral'
+    document.getElementById('btnGit').style.backgroundColor = ''
     document.getElementById('btnPessoa').style.backgroundColor  = ''
 
     // mostrar/ocultar conteudo selecionado
     document.getElementById('dvPessoa').style.display  = 'none'
+    document.getElementById('dvGit').style.display  = 'none'
     document.getElementById('dvProduto').style.display = ''
 
     getProduto()
+}
+
+function abrirGit(){
+    // mudar cor btn selecionado
+    document.getElementById('btnPessoa').style.backgroundColor  = ''
+    document.getElementById('btnProduto').style.backgroundColor = ''
+    document.getElementById('btnGit').style.backgroundColor = 'coral'
+
+    // mostrar/ocultar conteudo selecionado
+    document.getElementById('dvProduto').style.display = 'none'
+    document.getElementById('dvPessoa').style.display  = 'none'
+    document.getElementById('dvGit').style.display  = ''
 }
 
 function getPessoa(){

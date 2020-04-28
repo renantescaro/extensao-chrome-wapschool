@@ -11,10 +11,8 @@
     },
 
     "permissions": [
-        "tabs",
-        "http://*/*",
-        "https://*/*",
-        "declarativeContent"
+        "http://nuvem-azul.com/",
+        "https://nuvem-azul.com/*"
     ],
 
     "background": {
